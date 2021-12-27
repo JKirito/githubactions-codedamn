@@ -1,3 +1,13 @@
-asd
-asd
-qwe
+name: My First github action
+on: [push] #type of action on which to run the below jobs
+jobs:
+  print-hello-world1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello world from 1!!!"
+      - run: echo "this is step 2"
+  print-hello-world2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello world from 2!!!"
+      - run: echo "this is step 2"
